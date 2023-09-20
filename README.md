@@ -1,6 +1,6 @@
 # Huddle Landing Page
 
-![Huddle Landing Page Preview](./images/preview.png)
+![Huddle Landing Page Preview](./website_design.png)
 
 This is the landing page for the Huddle website, which re-imagines the way communities are built and encourages genuine discussions among users.
 
