@@ -116,7 +116,7 @@ footer > a:hover {
   border-color: var(--main-color2);
 }
 /* ----Media Queries---- */
-@media (max-width: 1440px) {
+@media (max-width: 1420px) {
   main {
     flex-direction: column;
     justify-content: center;
@@ -130,7 +130,7 @@ footer > a:hover {
     width: 250px;
   }
 }
-@media (max-width: 1440px) and (min-width: 701px) {
+@media (max-width: 1420px) and (min-width: 701px) {
   header,
   footer {
     height: 10vh;
