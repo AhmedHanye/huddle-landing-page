@@ -90,7 +90,7 @@ main > #register > button:hover {
 /* ----Footer---- */
 footer {
   height: 8vh;
-  padding:0 5vw 2% 0;
+  padding: 0 5vw 2% 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -116,32 +116,33 @@ footer > a:hover {
   border-color: var(--main-color2);
 }
 /* ----Media Queries---- */
-@media (max-width:1440px){
-  main{
+@media (max-width: 1440px) {
+  main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: calc(100vh - 20vh);
   }
-  main > img{
+  main > img {
     height: auto;
   }
-  main > #register > button{
+  main > #register > button {
     width: 250px;
   }
 }
-@media (max-width: 1440px) and (min-width:701px) {
-  header,footer{
+@media (max-width: 1440px) and (min-width: 701px) {
+  header,
+  footer {
     height: 10vh;
   }
-  main > img{
+  main > img {
     width: 60%;
-  } 
-  main > #register > h1{
+  }
+  main > #register > h1 {
     font-size: 2.2rem;
     line-height: 50px;
   }
-  main > #register > p{
+  main > #register > p {
     font-size: 1.2rem;
     line-height: 30px;
   }
@@ -152,29 +153,29 @@ footer > a:hover {
     background-position: initial;
     background-size: cover;
   }
-  header{
+  header {
     height: 8vh;
     padding-left: 5vw;
   }
-  header > #logo{
+  header > #logo {
     height: 4vh;
     width: auto;
   }
-  main{
-    padding:5vh 0 0 0;
+  main {
+    padding: 5vh 0 0 0;
   }
-  main > img{
+  main > img {
     width: 80%;
   }
-  main > #register{
+  main > #register {
     padding: 2vh 6vw;
     text-align: center;
   }
-  main > #register > h1{
+  main > #register > h1 {
     font-size: 1.8rem;
     line-height: 40px;
   }
-  footer{
+  footer {
     padding-right: 2vw;
     height: 12vh;
     justify-content: center;
