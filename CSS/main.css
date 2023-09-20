@@ -1,0 +1,182 @@
+/* ----Variables---- */
+:root {
+  --main-color: hsl(257, 40%, 49%);
+  --main-color2: hsl(300, 69%, 71%);
+}
+/* ----Fonts---- */
+@font-face {
+  font-family: "Poppins";
+  src: url(../Google_Fonts/Poppins/Poppins-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../Google_Fonts/Poppins/Poppins-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../Google_Fonts/Open_Sans/static/OpenSans-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ----Global Styles---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  background-image: url(../images/bg-desktop.svg);
+  background-color: var(--main-color);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+/* ----Header---- */
+header {
+  padding-left: 10vw;
+  height: 14vh;
+  display: flex;
+  align-items: flex-end;
+}
+/* ----Main---- */
+main {
+  padding: 10vh 4vw 0 12vw;
+  display: flex;
+  height: calc(100vh - 22vh);
+}
+main > #register {
+  padding: 5vh 4.2vw;
+}
+main > #register > h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 2.5vh;
+  line-height: 60px;
+}
+main > #register > p {
+  font-size: 1.05rem;
+  color: #fff;
+  margin-bottom: 2.5vh;
+  line-height: 25px;
+}
+main > #register > button {
+  border-radius: 30px;
+  border: none;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 1.05rem;
+}
+main > #register > button:hover {
+  background-color: var(--main-color2);
+  color: white;
+}
+
+/* ----Footer---- */
+footer {
+  height: 8vh;
+  padding:0 5vw 2% 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer > a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-left: 20px;
+  border: 1px solid white;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+footer > a:hover {
+  color: var(--main-color2);
+  border-color: var(--main-color2);
+}
+/* ----Media Queries---- */
+@media (max-width:1440px){
+  main{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 20vh);
+  }
+  main > img{
+    height: auto;
+  }
+  main > #register > button{
+    width: 250px;
+  }
+}
+@media (max-width: 1440px) and (min-width:701px) {
+  header,footer{
+    height: 10vh;
+  }
+  main > img{
+    width: 60%;
+  } 
+  main > #register > h1{
+    font-size: 2.2rem;
+    line-height: 50px;
+  }
+  main > #register > p{
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+}
+@media (max-width: 700px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+    background-position: initial;
+    background-size: cover;
+  }
+  header{
+    height: 8vh;
+    padding-left: 5vw;
+  }
+  header > #logo{
+    height: 4vh;
+    width: auto;
+  }
+  main{
+    padding:5vh 0 0 0;
+  }
+  main > img{
+    width: 80%;
+  }
+  main > #register{
+    padding: 2vh 6vw;
+    text-align: center;
+  }
+  main > #register > h1{
+    font-size: 1.8rem;
+    line-height: 40px;
+  }
+  footer{
+    padding-right: 2vw;
+    height: 12vh;
+    justify-content: center;
+  }
+}
