@@ -57,7 +57,7 @@ main {
   height: calc(100vh - 22vh);
 }
 main > #register {
-  padding: 5vh 4.2vw;
+  padding: 5vh 0 0 4.2vw;
 }
 main > #register > h1 {
   font-family: "Poppins", sans-serif;
