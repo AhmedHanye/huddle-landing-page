@@ -52,12 +52,12 @@ header {
 }
 /* ----Main---- */
 main {
-  padding: 10vh 4vw 0 12vw;
+  padding: 10vh 4vw 0 9vw;
   display: flex;
   height: calc(100vh - 22vh);
 }
 main > #register {
-  padding: 5vh 0 0 4.2vw;
+  padding: 5vh 0 0 3.2vw;
 }
 main > #register > h1 {
   font-family: "Poppins", sans-serif;
@@ -136,7 +136,7 @@ footer > a:hover {
     height: 10vh;
   }
   main > img {
-    width: 60%;
+    width: 50%;
   }
   main > #register > h1 {
     font-size: 2.2rem;
